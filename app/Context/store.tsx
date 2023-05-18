@@ -1,6 +1,5 @@
 'use client';
 
-import { type } from "os";
 import { createContext, useContext, Dispatch, SetStateAction, useState } from "react";
 
 type DataType = {
