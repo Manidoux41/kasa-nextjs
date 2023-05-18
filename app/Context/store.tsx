@@ -20,7 +20,9 @@ const GlobalContext = createContext<ContextProps>({
     setData: (): DataType[] => []
 })
 
-export const GlobalContextProvider = ({children}) => {
+export const GlobalContextProvider = ({children}:{
+    children: React.ReactNode
+  }) => {
     const [userId, setUserId] = useState('');
     const [data, setData] = useState<[] | DataType[]>([]);
 
