@@ -13,7 +13,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full mx-auto p-4 lg:w-[1240px] lg:[p0] flex justify-between items-center">
+    <header className="w-full mx-auto p-4 md:px-0 lg:w-[1240px] lg:[p0] flex justify-between items-center">
       <Link href='/' className="w-[145px] h-[47px] md:w-[210px] md:h-[68px]">
         <img src="./logo.png" alt="logo kasa" className="w-full h-full object-cover" />
       </Link>

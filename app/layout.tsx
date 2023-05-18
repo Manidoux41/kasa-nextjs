@@ -1,7 +1,8 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
 import './globals.css'
-import { Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google';
+import { GlobalContextProvider } from './Context/store';
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -20,7 +21,9 @@ export default function RootLayout({
 
       <body className={montserrat.className}>
         <Header />
-        {children}
+        <GlobalContextProvider>
+          {children}
+        </GlobalContextProvider>
         <Footer />
       </body>
     </html>
